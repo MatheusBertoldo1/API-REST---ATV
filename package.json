@@ -1,6 +1,11 @@
 {
   "name": "api-orcamentos-ldw",
   "version": "1.0.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@scarf/scarf"
+    ]
+  },
   "private": true,
   "main": "dist/server.js",
   "type": "commonjs",
