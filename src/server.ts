@@ -27,13 +27,12 @@ async function startServer() {
     await sequelize.sync();
     console.log('Tabela sincronizada com o banco de dados.');
 
-    app.listen(PORT, () => {
-      console.log(`Servidor rodando na porta ${PORT}`);
-      console.log(`Documentação: http://localhost:${PORT}/api-docs`);
+    app.listen(Number(PORT), '0.0.0.0', () => {
+      console.log(`Server running on port ${PORT}`);
     });
   } catch (error) {
     console.error('Falha ao conectar com o banco de dados:', error);
   }
 }
-
+const erroHusky: number = "texto_invalido";
 startServer();
