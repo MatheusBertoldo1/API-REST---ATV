@@ -1,2 +1,7 @@
+packages:
+  - 'backend'
+
 allowBuilds:
+  sqlite3: true
+  esbuild: true
   '@scarf/scarf': false
