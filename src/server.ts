@@ -34,5 +34,5 @@ async function startServer() {
     console.error('Falha ao conectar com o banco de dados:', error);
   }
 }
-const erroHusky: number = "texto_invalido";
+
 startServer();
