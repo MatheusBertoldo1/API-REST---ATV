@@ -46,5 +46,5 @@ Budget.init(
     sequelize,
     tableName: 'budgets',
     timestamps: true,
-  },
+  }
 );

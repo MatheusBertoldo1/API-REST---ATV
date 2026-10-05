@@ -2,14 +2,11 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import swaggerUi from 'swagger-ui-express';
-import { createRequire } from 'module';
+import swaggerDocument from './docs/swagger.json';
 
 import { sequelize } from './config/database.js';
 import budgetRoutes from './routes/budgetRoutes.js';
 import './models/budgetsModel.js';
-
-const require = createRequire(import.meta.url);
-const swaggerDocument = require('../src/docs/swagger.json');
 
 dotenv.config();
 

@@ -58,7 +58,7 @@ export class BudgetController {
     }
   }
 
-  // PUT Atualizar orçamento 
+  // PUT Atualizar orçamento
   public static async update(req: Request, res: Response): Promise<Response> {
     try {
       const budgetId = Number(req.params.id);

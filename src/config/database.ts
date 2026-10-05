@@ -9,7 +9,7 @@ export const sequelize = isTestEnvironment
   ? new Sequelize({
       dialect: 'sqlite',
       storage: ':memory:',
-      logging: false, 
+      logging: false,
     })
   : new Sequelize(
       process.env.DB_NAME || 'fatec_db',
@@ -24,5 +24,5 @@ export const sequelize = isTestEnvironment
             ? { ssl: { require: true, rejectUnauthorized: false } }
             : {},
         logging: false,
-      },
+      }
     );
