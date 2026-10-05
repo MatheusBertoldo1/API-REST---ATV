@@ -4,8 +4,8 @@ import dotenv from 'dotenv';
 import swaggerUi from 'swagger-ui-express';
 import swaggerDocument from './docs/swagger.json';
 
-import { sequelize } from './config/database.js';
-import budgetRoutes from './routes/budgetRoutes.js';
+import { sequelize } from './config/database';
+import budgetRoutes from './routes/budgetRoutes';
 import './models/budgetsModel.js';
 
 dotenv.config();

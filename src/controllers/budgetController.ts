@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Budget } from '../models/budgetsModel.js';
+import { Budget } from '../models/budgetsModel';
 
 export class BudgetController {
   // Listar todos os orçamentos
